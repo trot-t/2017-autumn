@@ -1,0 +1,149 @@
+\documentclass[a4paper,landscape,11pt]{article}
+%\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+%\usepackage[english,ukrainian,russian]{babel} 
+\usepackage[english,russian]{babel} 
+\usepackage{wrapfig}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{booktabs}
+\usepackage{pifont}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage[american,cuteinductors,smartlabels]{circuitikz}
+
+\usepackage{advdate}
+%\usepackage{showframe}
+
+%\setlength{\voffset}{-72pt} %отступ сверху - чтобы увидеть откомментарить \usepackage{showframe}
+\setlength{\voffset}{-36pt}
+\setlength{\footskip}{-20pt}
+\setlength{\topmargin}{0pt} 
+%\setlength{\headheight{1pt}
+\setlength{\headsep}{0pt}
+\setlength{\hoffset}{-72pt}
+\setlength{\marginparwidth}{0pt}
+\setlength{\textwidth}{530pt}
+\setlength{\textheight}{808pt}
+%\author{ Прокшин Артем \\
+%\small ЛЭТИ\\
+%\small \texttt{taybola@gmail.com}}
+
+%\title{Список группы}
+%\date{}
+%abcdefghijklmnop
+%         .
+
+\newcommand*\OK{&\small \ding{51}$\!\!_\circ$} % начал защищать
+\newcommand*\Ok{&\small \ding{51}$\!\!_\circ$} % начал защищатi
+\newcommand*\ok{&{\small \ding{51}}} % присутствовал
+\newcommand*\oK{&{\small \ding{51}?}} % присутствовал?
+\newcommand*\no{&{\small }} % отсутствовал
+\newcommand*\D{\tiny\ding{48}} % защита, defend
+\newcommand*\da{&{\small\ding{48}$\!\!_1$}} % защита, defend
+\newcommand*\dab{&{\small\ding{48}$\!\!^1_2$}} % защита, defend
+\newcommand*\ab{&{\small\ding{48}$\!\!^1_2$}} % защита, defend
+%\newcommand*\ab{&{\small\ding{48}$\!\!^1_2$}} % защита, defend
+\newcommand*\bc{&{\small\ding{48}$\!\!^2_3$}} % защита, defend
+\newcommand*\dabc{&{\small\ding{48}$\!\!^1_{23}$}} % защита, defend
+\newcommand*\ac{&{\small\ding{48}$\!\!^1_{23}$}} % защита, defend
+\newcommand*\db{&{\small\ding{48}$\!\!_2$}} % защита, defend
+\newcommand*\dc{&{\small\ding{48}$\!\!_3$}} % защита, defend
+\newcommand*\dd{&{\small\ding{48}$\!\!_4$}} % защита, defend
+\newcommand*\bd{&{\small\ding{48}$\!\!^2_{34}$}} % защита, defend
+\newcommand*\de{&{\small\ding{48}$\!\!_5$}} % защита, defend
+\newcommand*\dE{&{\small\ding{48}$\!\!^4_5$}} % защита, defend
+\newcommand*\cd{&{\small\ding{48}$\!\!^3_4$}} % защита, defend
+\newcommand*\dg{&{\small\ding{48}$\!\!_6$}} % защита, defend
+\newcommand*\fg{&{\small\ding{48}$\!\!^6_7$}} % защита, defend
+\newcommand*\dH{&{\small\ding{48}$\!\!^8$}} % защита, defend
+\newcommand*\gh{&{\small\ding{48}$\!\!^7_8$}} % защита, defend
+\newcommand*\fh{&{\small\ding{48}$\!\!^7_{89}$}} % защита, defend
+\newcommand*\Skip{\noindent\rule{0.3cm}{0.9pt}}
+
+
+\begin{document}
+%\thispagestyle{empty}
+% or
+\pagenumbering{gobble}
+%\AdvanceDate[1] % печатаю в пятницу а нужна суббота
+\begin{center}\today\end{center}
+\vspace*{1\baselineskip}
+
+%\maketitle
+%\skippage 
+%\begin{table} \centering 
+%\hspace{-6cm}
+	\begin{tabular}{p{7pt}|l|p{6pt}p{6pt}p{6pt}p{6pt}}% @{}}
+\multicolumn{6}{c}{График выполнения лабораторных работ студентами 7872 группы} \\
+%\multicolumn{4}{c}{Ведомость посещения занятий по инфоматике студентами 7872 группы} \\
+\toprule
+%&&&&&\\
+&&&&&\\
+&&&&&\\
+&&&&&\\
+&&&&&\\
+&&&&&\\
+&&&&&\\
+&&\rotatebox{90}{\rlap{\small 4 сентября (прак.)}}
+&\rotatebox{90}{\rlap{\small 6 сентября (прак.)}}
+&\rotatebox{90}{\rlap{\small 9 сентября (прак.)}}
+\\
+\midrule
+ 1\,&Гильченок Василий Александрович    \no\no\no\\ 
+% 2\,&Горячий Федор Васильевич         \,\ok\no\\
+ 3\,&Даниленко Андрей Георгиевич        \ok\ok\no\\
+ 4\,&Злыгарева Екатериня Александровна  \no\no\no\\
+ 5\,&Каныгин Савелий Дмитриевич         \ok\ok\ok\\
+ 6\,&Критский Александр Сергеевич       \no\no\no\\
+ 7\,&Лебедева Валентина Михайловна      \ok\ok\ok\\
+ 8\,&Луцевич Дмитрий Андреевич          \ok\ok\ok\\
+ 9\,&Маджидов Илёсхон Насимджонович     \no\no\no\\
+10\,&Наруть Андрей Евгеньевич           \no\no\no\\
+11\,&Панюшкин Вячеслав Александрович    \ok\ok\no\\
+\midrule
+12\,&Примаченко Павел Николаевич        \ok\ok\ok\\
+13\,&Распутин Артём Павлович            \ok\ok\no\\
+14\,&Рыжая Анастасия Александровна      \no\no\no\\
+15\,&Смышляева Анастасия Андреевна      \no\no\no\\
+16\,&Тимохин Валентин Дмитриевич        \ok\ok\ok\\
+17\,&Халимджанова Мушарафахон           \no\no\no\\
+18\,&Мартенсон Георгий Ильич            \ok\ok\ok\\
+19\,&Михеева Дарья Дмитриевна (ст.)     \ok\ok\ok\\
+20\,&Серебров Алексей Николаевич        \ok\ok\ok\\
+\bottomrule
+\end{tabular} 
+\newpage
+%
+\hspace{-5cm}
+\begin{tabular}{l|cccccccccccc}
+\multicolumn{13}{c}{выполнение практических работ, 7872 группа} \\
+\toprule
+		        &$\Theta$&$\alpha$&пр.№1&пр.№2&пр.№3&пр.№4&пр.№5&пр.№6&пр.№7&консультация&экзамен&курсовой\\
+\midrule
+Гильченок Василий Александрович  \\
+Горячий Федор Васильевич         \\
+Даниленко Андрей Георгиевич      &60&20\\
+Злыгарева Екатериня Александровна\\
+Каныгин Савелий Дмитриевич       &70&20\\
+Критский Александр Сергеевич     \\
+Лебедева Валентина Михайловна    &60&25\\
+Луцевич Дмитрий Андреевич        &70&105\\
+Маджидов Илёсхон Насимджонович   \\
+Наруть Андрей Евгеньевич         \\
+Панюшкин Вячеслав Александрович  &110&30\\
+\\
+Примаченко Павел Николаевич      &65&15\\
+Распутин Артём Павлович          &65&30\\
+Рыжая Анастасия Александровна    \\
+Смышляева Анастасия Андреевна    \\
+Тимохин Валентин Дмитриевич      &65&35\\
+Холимджанова Мушарафахон         \\
+Мартенсон Георгий Ильич          &80&50\\
+Михеева Дарья Дмитриевна         &70&25\\
+Серебров Алексей Николаевич      &80&30\\
+\bottomrule
+\end{tabular}
+\end{document}
