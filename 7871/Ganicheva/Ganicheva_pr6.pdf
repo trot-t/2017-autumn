@@ -1,0 +1,35 @@
+1.	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+2.	%%%
+3.	%%% ЭЛЕКТРИЧЕСКАЯ СХЕМА
+4.	%%%
+5.	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+6.	
+7.	
+8.	\documentclass[a4paper,11pt]{article}
+9.	\usepackage[T2A]{fontenc}
+10.	\usepackage[utf8]{inputenc}
+11.	\usepackage[english, russian]{babel}
+12.	\usepackage{tikz}
+13.	\usepackage[american,cuteinductors,smartlabels]{circuitikz}
+14.	\title{Электрическая схема}
+15.	\author{Ганичева Татьяна гр.7871}
+16.	% Конец преамбулы
+17.	\begin{document}
+18.	\maketitle
+19.	\begin{center}
+20.	\begin{circuitikz}[american voltages, scale = 0.5,very thick]
+21.	\draw
+22.	(0,0) to (0,3)
+23.	to [L] (8,3)
+24.	to [L] (4,8)
+25.	to [L] (0,3)
+26.	(4, 8) to (4, 11) to (19, 11)
+27.	to [L] (19, 6)
+28.	to [L] (15, 1) to (8, 1) to (8, 3)
+29.	(0, 0) to (25, 0) to (25, 1) to (23, 1)
+30.	to [L] (19, 6);
+31.	\draw[step=1.0,gray,ultra thin] (0,0) grid (25,11);
+32.	\end{circuitikz}
+33.	\end{center}
+34.	\end{document}
+
